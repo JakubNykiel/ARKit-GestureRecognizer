@@ -1,0 +1,6 @@
+framework module Pods_ARKit_GestureRecognizer {
+  umbrella header "Pods-ARKit-GestureRecognizer-umbrella.h"
+
+  export *
+  module * { export * }
+}

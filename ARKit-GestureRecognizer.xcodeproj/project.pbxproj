@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		089CC2159DA2C988FB7BEB12 /* Pods_ARKit_GestureRecognizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53053B1A6CBB1452080202A7 /* Pods_ARKit_GestureRecognizer.framework */; };
 		C3537F34205D0A66002E1F15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3537F33205D0A66002E1F15 /* AppDelegate.swift */; };
 		C3537F36205D0A66002E1F15 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = C3537F35205D0A66002E1F15 /* art.scnassets */; };
 		C3537F3B205D0A66002E1F15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3537F39205D0A66002E1F15 /* Main.storyboard */; };
 		C3537F3D205D0A66002E1F15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3537F3C205D0A66002E1F15 /* Assets.xcassets */; };
 		C3537F40205D0A66002E1F15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3537F3E205D0A66002E1F15 /* LaunchScreen.storyboard */; };
+		C3537F4B205D0F03002E1F15 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3537F4A205D0F03002E1F15 /* MenuViewController.swift */; };
+		C3537F4E205D170A002E1F15 /* ARKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3537F4D205D170A002E1F15 /* ARKitViewController.swift */; };
+		C3537F50205D1E1A002E1F15 /* PhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3537F4F205D1E1A002E1F15 /* PhotoLibrary.swift */; };
+		C3537F55205D20C0002E1F15 /* UserImagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3537F54205D20C0002E1F15 /* UserImagesCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53053B1A6CBB1452080202A7 /* Pods_ARKit_GestureRecognizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARKit_GestureRecognizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C98EAC49D34CFA4151773C6 /* Pods-ARKit-GestureRecognizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARKit-GestureRecognizer.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARKit-GestureRecognizer/Pods-ARKit-GestureRecognizer.release.xcconfig"; sourceTree = "<group>"; };
 		C3537F30205D0A66002E1F15 /* ARKit-GestureRecognizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARKit-GestureRecognizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3537F33205D0A66002E1F15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3537F35205D0A66002E1F15 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -22,6 +29,11 @@
 		C3537F3C205D0A66002E1F15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3537F3F205D0A66002E1F15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3537F41205D0A66002E1F15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3537F4A205D0F03002E1F15 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		C3537F4D205D170A002E1F15 /* ARKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitViewController.swift; sourceTree = "<group>"; };
+		C3537F4F205D1E1A002E1F15 /* PhotoLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibrary.swift; sourceTree = "<group>"; };
+		C3537F54205D20C0002E1F15 /* UserImagesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImagesCollectionViewCell.swift; sourceTree = "<group>"; };
+		D8BF329845CB6B43844E9A1A /* Pods-ARKit-GestureRecognizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARKit-GestureRecognizer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARKit-GestureRecognizer/Pods-ARKit-GestureRecognizer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				089CC2159DA2C988FB7BEB12 /* Pods_ARKit_GestureRecognizer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC115EEEB63E77F3FAB39688 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53053B1A6CBB1452080202A7 /* Pods_ARKit_GestureRecognizer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C3537F27205D0A66002E1F15 = {
 			isa = PBXGroup;
 			children = (
 				C3537F32205D0A66002E1F15 /* ARKit-GestureRecognizer */,
 				C3537F31205D0A66002E1F15 /* Products */,
+				C8829F236A02FF0FAF73A030 /* Pods */,
+				AC115EEEB63E77F3FAB39688 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +80,7 @@
 				C3537F49205D0BBE002E1F15 /* Resources */,
 				C3537F47205D0AED002E1F15 /* Modules */,
 				C3537F33205D0A66002E1F15 /* AppDelegate.swift */,
+				C3537F39205D0A66002E1F15 /* Main.storyboard */,
 			);
 			path = "ARKit-GestureRecognizer";
 			sourceTree = "<group>";
@@ -64,6 +88,8 @@
 		C3537F47205D0AED002E1F15 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				C3537F51205D1E1E002E1F15 /* Photo Library */,
+				C3537F4C205D13C5002E1F15 /* AR */,
 				C3537F48205D0AF6002E1F15 /* Menu */,
 			);
 			path = Modules;
@@ -72,6 +98,7 @@
 		C3537F48205D0AF6002E1F15 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				C3537F4A205D0F03002E1F15 /* MenuViewController.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -80,12 +107,37 @@
 			isa = PBXGroup;
 			children = (
 				C3537F35205D0A66002E1F15 /* art.scnassets */,
-				C3537F39205D0A66002E1F15 /* Main.storyboard */,
 				C3537F3C205D0A66002E1F15 /* Assets.xcassets */,
 				C3537F3E205D0A66002E1F15 /* LaunchScreen.storyboard */,
 				C3537F41205D0A66002E1F15 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		C3537F4C205D13C5002E1F15 /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				C3537F4D205D170A002E1F15 /* ARKitViewController.swift */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
+		C3537F51205D1E1E002E1F15 /* Photo Library */ = {
+			isa = PBXGroup;
+			children = (
+				C3537F4F205D1E1A002E1F15 /* PhotoLibrary.swift */,
+				C3537F54205D20C0002E1F15 /* UserImagesCollectionViewCell.swift */,
+			);
+			path = "Photo Library";
+			sourceTree = "<group>";
+		};
+		C8829F236A02FF0FAF73A030 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8BF329845CB6B43844E9A1A /* Pods-ARKit-GestureRecognizer.debug.xcconfig */,
+				9C98EAC49D34CFA4151773C6 /* Pods-ARKit-GestureRecognizer.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,9 +147,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3537F44205D0A66002E1F15 /* Build configuration list for PBXNativeTarget "ARKit-GestureRecognizer" */;
 			buildPhases = (
+				7AEE93740BBA4C35A44E9663 /* [CP] Check Pods Manifest.lock */,
 				C3537F2C205D0A66002E1F15 /* Sources */,
 				C3537F2D205D0A66002E1F15 /* Frameworks */,
 				C3537F2E205D0A66002E1F15 /* Resources */,
+				2D90CEB6609280AEFA3DBA53 /* [CP] Embed Pods Frameworks */,
+				5B54D3BA58412BA0AEF1130F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,12 +211,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2D90CEB6609280AEFA3DBA53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ARKit-GestureRecognizer/Pods-ARKit-GestureRecognizer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ImagePicker/ImagePicker.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImagePicker.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARKit-GestureRecognizer/Pods-ARKit-GestureRecognizer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B54D3BA58412BA0AEF1130F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARKit-GestureRecognizer/Pods-ARKit-GestureRecognizer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AEE93740BBA4C35A44E9663 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARKit-GestureRecognizer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C3537F2C205D0A66002E1F15 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3537F50205D1E1A002E1F15 /* PhotoLibrary.swift in Sources */,
 				C3537F34205D0A66002E1F15 /* AppDelegate.swift in Sources */,
+				C3537F4B205D0F03002E1F15 /* MenuViewController.swift in Sources */,
+				C3537F4E205D170A002E1F15 /* ARKitViewController.swift in Sources */,
+				C3537F55205D20C0002E1F15 /* UserImagesCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,11 +409,12 @@
 		};
 		C3537F45205D0A66002E1F15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8BF329845CB6B43844E9A1A /* Pods-ARKit-GestureRecognizer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6454359TU3;
-				INFOPLIST_FILE = "ARKit-GestureRecognizer/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ARKit-GestureRecognizer/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jnykiel.ARKit-GestureRecognizer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -311,11 +425,12 @@
 		};
 		C3537F46205D0A66002E1F15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C98EAC49D34CFA4151773C6 /* Pods-ARKit-GestureRecognizer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6454359TU3;
-				INFOPLIST_FILE = "ARKit-GestureRecognizer/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ARKit-GestureRecognizer/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jnykiel.ARKit-GestureRecognizer";
 				PRODUCT_NAME = "$(TARGET_NAME)";

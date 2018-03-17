@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CB932091B520E7F65A74FBFA3FF11A2 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF4B2903EECFBCDAE53859470C161BF /* Helper.swift */; };
+		1BA3717739BBA5C6DCE0EB2A455E8FDB /* ImagePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3627A8804E2B095F1D49AF421B8F8F2D /* ImagePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27E5AAC40E8C4D8DFF70DF4E7021D68E /* ImageGalleryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9E1AA57C279D49069D9DBD188B0A97 /* ImageGalleryViewCell.swift */; };
+		39528BEA185C60BFFE2E5909006E723D /* OFF@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B80BAB2FE6890E02BE7C496404E9F8B0 /* OFF@3x.png */; };
+		4B043088449CCBB537A54D669ED216C5 /* ImagePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 404EE37429A8B338036824EFA354C8DB /* ImagePicker-dummy.m */; };
+		5F3E35F2B166055EEC4E7A50E80958FD /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598C9698DCFA37FC3175CAD93B4DB0D /* CameraView.swift */; };
+		680ECF5AE2B82F3A13B49AC0C5D78D74 /* ImageStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A60BE1E1221D8665D2C2F1152602D50 /* ImageStack.swift */; };
+		695E1089B581582F41B2389C2E4D19A0 /* ImagePicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7A56D51DD1D199199301E35F53A81D16 /* ImagePicker.bundle */; };
+		6EF0F3FF30F90492F6A56D1AE3086AB8 /* Pods-ARKit-GestureRecognizer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB12A3EE6F94CB69153131F5391149CE /* Pods-ARKit-GestureRecognizer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7750B41B6FEAF447DD89237E2920FE30 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840966EAD0718963750ABB9F4A6EB218 /* AVFoundation.framework */; };
+		7BB0D44E3938626F29853182C9205AE7 /* BottomContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCC2455D2BA0CFE82B1A2CD764AF07C /* BottomContainerView.swift */; };
+		7D7329116B161A636913293834E7B412 /* Pods-ARKit-GestureRecognizer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D66A404EEEC934FFDF2DBDB950DFEF0B /* Pods-ARKit-GestureRecognizer-dummy.m */; };
+		8A97BCA1E8E4140A84AF581D9BFA4711 /* ImageGalleryLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4782C4A1C2228BE332DE3A560D735D4 /* ImageGalleryLayout.swift */; };
+		8ADC7BE06862E7A8D631BD7A987CC983 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */; };
+		935C2F84774171D23DFC43DA57F172F8 /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4337DDACE077EABC2F471DB42F1BE12E /* ImagePickerController.swift */; };
+		9D8234BB3230E63318FB87CAA29AD59C /* ImageGalleryViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E843A237FC8074E3CA94A69E7A0B950D /* ImageGalleryViewDataSource.swift */; };
+		A3D56D26C9EAE0FCA76083C1E7DC6847 /* CameraMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8A81E129FFE316F1C8A29220313F64 /* CameraMan.swift */; };
+		A44FEA8F8C9099C426A5DF8BC50C912B /* ConstraintsSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE024880F43FE8D5CDC8D0746295F74 /* ConstraintsSetup.swift */; };
+		A50F09D10E907DEE57D57C6AD160F8F7 /* ON@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FD8017D12BF271CB3D0328C4B9630F9 /* ON@3x.png */; };
+		AAE3B839B228D2FB151791C791242D04 /* AUTO@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45DB53CC5242B5E4DF2B562B0040E0FC /* AUTO@3x.png */; };
+		B0DED102D2452EC7DEB173264004161A /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A805861C4092810E90249162D531A6BF /* TopView.swift */; };
+		B7EA24AFF7D230810AB18E2C89544208 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD576E8FB8BC8494A329D769A2ED69A /* Configuration.swift */; };
+		C3290D6F80FE6EE0D5D6D419C93D0E80 /* cameraIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E58DA37A519E8ED71661ABEFBE889DB /* cameraIcon@3x.png */; };
+		CD8E652230907093FCFFE33467327F56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */; };
+		D7CC87164C2B724F1EAABCF6A9A068F4 /* focusIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E25A8478F94A28643CE0F43BF9EA7E6 /* focusIcon@3x.png */; };
+		DD8C6F683BF022AF2CAA712CB95F5836 /* VideoInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36665439190760C5A1EF54620FC2B6EB /* VideoInfoView.swift */; };
+		DDFA8B7BE2EA5E19E7B475915355D477 /* video@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AD76E9C05780071E1F7180E39DB59BF /* video@3x.png */; };
+		DEC05FECB37B24E58F284AC9B97F7E64 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B33709534350C49F266E9B11FF07DF8 /* StackView.swift */; };
+		EABB4532135FDC89BFC940ED172E901E /* ButtonPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EC021DF64ABCEC5C9D35A370A107F6 /* ButtonPicker.swift */; };
+		F6142E7525478016188C33344951C540 /* ImageGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9970E49D10D3ED332B8AF2EBE1DBB49 /* ImageGalleryView.swift */; };
+		F7DB16A5D3874C16C5E6C70CEBFADC95 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D77FD31E4D8E3B32C1C188B97DBC8B /* LocationManager.swift */; };
+		F88AC4C283F4CE67030F4321693BBAAA /* selectedImageGallery@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 347842AB0045A8FE8701CDA4805D6399 /* selectedImageGallery@3x.png */; };
+		F9F53B83877BABC897067AC39EC03A63 /* AssetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0627834CB360D3115C9517312C7048C /* AssetManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B30F342304F473441EFBB8CF0891F01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A17CB894371F02E0326064851AF7C43;
+			remoteInfo = ImagePicker;
+		};
+		6B8986630584C6CBE06F80050CD944A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88D0D45A202C76CDCB9546091A25AB0B;
+			remoteInfo = "ImagePicker-ImagePicker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C5B46567DC60FFDFA6DBBDEFECEECFB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A60BE1E1221D8665D2C2F1152602D50 /* ImageStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageStack.swift; path = Source/BottomView/ImageStack.swift; sourceTree = "<group>"; };
+		1E6C25CCEC37354FC73BEE81E603D5A6 /* ResourceBundle-ImagePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ImagePicker-Info.plist"; sourceTree = "<group>"; };
+		2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2E25A8478F94A28643CE0F43BF9EA7E6 /* focusIcon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "focusIcon@3x.png"; path = "Images/focusIcon@3x.png"; sourceTree = "<group>"; };
+		347842AB0045A8FE8701CDA4805D6399 /* selectedImageGallery@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "selectedImageGallery@3x.png"; path = "Images/selectedImageGallery@3x.png"; sourceTree = "<group>"; };
+		3627A8804E2B095F1D49AF421B8F8F2D /* ImagePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImagePicker-umbrella.h"; sourceTree = "<group>"; };
+		36665439190760C5A1EF54620FC2B6EB /* VideoInfoView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoInfoView.swift; path = Source/ImageGallery/VideoInfoView.swift; sourceTree = "<group>"; };
+		404EE37429A8B338036824EFA354C8DB /* ImagePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ImagePicker-dummy.m"; sourceTree = "<group>"; };
+		4337DDACE077EABC2F471DB42F1BE12E /* ImagePickerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePickerController.swift; path = Source/ImagePickerController.swift; sourceTree = "<group>"; };
+		45DB53CC5242B5E4DF2B562B0040E0FC /* AUTO@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "AUTO@3x.png"; path = "Images/AUTO@3x.png"; sourceTree = "<group>"; };
+		5598C9698DCFA37FC3175CAD93B4DB0D /* CameraView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraView.swift; path = Source/CameraView/CameraView.swift; sourceTree = "<group>"; };
+		6AD76E9C05780071E1F7180E39DB59BF /* video@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "video@3x.png"; path = "Images/video@3x.png"; sourceTree = "<group>"; };
+		6B33709534350C49F266E9B11FF07DF8 /* StackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StackView.swift; path = Source/BottomView/StackView.swift; sourceTree = "<group>"; };
+		6BD85237EB80A2340931C51D806BADF0 /* ImagePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImagePicker-prefix.pch"; sourceTree = "<group>"; };
+		6C9E1AA57C279D49069D9DBD188B0A97 /* ImageGalleryViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageGalleryViewCell.swift; path = Source/ImageGallery/ImageGalleryViewCell.swift; sourceTree = "<group>"; };
+		6DCC2455D2BA0CFE82B1A2CD764AF07C /* BottomContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BottomContainerView.swift; path = Source/BottomView/BottomContainerView.swift; sourceTree = "<group>"; };
+		6ED966095B67EF988F564A62E68A8485 /* Pods-ARKit-GestureRecognizer-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARKit-GestureRecognizer-resources.sh"; sourceTree = "<group>"; };
+		741A81769A2D68E22BF02815E92FC2AB /* Pods-ARKit-GestureRecognizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARKit-GestureRecognizer.debug.xcconfig"; sourceTree = "<group>"; };
+		79344EEF0FAFCED1FF9EF4E7A10E091F /* Pods-ARKit-GestureRecognizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARKit-GestureRecognizer.release.xcconfig"; sourceTree = "<group>"; };
+		7A56D51DD1D199199301E35F53A81D16 /* ImagePicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ImagePicker.bundle; path = ImagePicker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		840966EAD0718963750ABB9F4A6EB218 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		84553F1F83671CC55723DF33A12E453C /* ImagePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ImagePicker.xcconfig; sourceTree = "<group>"; };
+		8AF4B2903EECFBCDAE53859470C161BF /* Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helper.swift; path = Source/Helper.swift; sourceTree = "<group>"; };
+		92737302FF6B3C78C8949246DD2B26A9 /* Pods-ARKit-GestureRecognizer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARKit-GestureRecognizer-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A8A81E129FFE316F1C8A29220313F64 /* CameraMan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraMan.swift; path = Source/CameraView/CameraMan.swift; sourceTree = "<group>"; };
+		9DE8C926EB6221898E9CFF7C25A89AF3 /* ImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ImagePicker.framework; path = ImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E58DA37A519E8ED71661ABEFBE889DB /* cameraIcon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cameraIcon@3x.png"; path = "Images/cameraIcon@3x.png"; sourceTree = "<group>"; };
+		9FD8017D12BF271CB3D0328C4B9630F9 /* ON@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ON@3x.png"; path = "Images/ON@3x.png"; sourceTree = "<group>"; };
+		A805861C4092810E90249162D531A6BF /* TopView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TopView.swift; path = Source/TopView/TopView.swift; sourceTree = "<group>"; };
+		A9970E49D10D3ED332B8AF2EBE1DBB49 /* ImageGalleryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageGalleryView.swift; path = Source/ImageGallery/ImageGalleryView.swift; sourceTree = "<group>"; };
+		AE1BB7C8F5EA2F5709CE7A7A27104A1D /* Pods-ARKit-GestureRecognizer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ARKit-GestureRecognizer-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B4782C4A1C2228BE332DE3A560D735D4 /* ImageGalleryLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageGalleryLayout.swift; path = Source/ImageGallery/ImageGalleryLayout.swift; sourceTree = "<group>"; };
+		B7EC021DF64ABCEC5C9D35A370A107F6 /* ButtonPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonPicker.swift; path = Source/BottomView/ButtonPicker.swift; sourceTree = "<group>"; };
+		B80BAB2FE6890E02BE7C496404E9F8B0 /* OFF@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "OFF@3x.png"; path = "Images/OFF@3x.png"; sourceTree = "<group>"; };
+		C9E04CC5800B264B3D74CC3FDC844897 /* Pods-ARKit-GestureRecognizer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ARKit-GestureRecognizer.modulemap"; sourceTree = "<group>"; };
+		CAE024880F43FE8D5CDC8D0746295F74 /* ConstraintsSetup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintsSetup.swift; path = Source/Extensions/ConstraintsSetup.swift; sourceTree = "<group>"; };
+		CFD576E8FB8BC8494A329D769A2ED69A /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Source/Configuration.swift; sourceTree = "<group>"; };
+		D66A404EEEC934FFDF2DBDB950DFEF0B /* Pods-ARKit-GestureRecognizer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ARKit-GestureRecognizer-dummy.m"; sourceTree = "<group>"; };
+		D94E0411E7B1306B4E09537E5FADAE5F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB12A3EE6F94CB69153131F5391149CE /* Pods-ARKit-GestureRecognizer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ARKit-GestureRecognizer-umbrella.h"; sourceTree = "<group>"; };
+		E0627834CB360D3115C9517312C7048C /* AssetManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetManager.swift; path = Source/AssetManager.swift; sourceTree = "<group>"; };
+		E843A237FC8074E3CA94A69E7A0B950D /* ImageGalleryViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageGalleryViewDataSource.swift; path = Source/ImageGallery/ImageGalleryViewDataSource.swift; sourceTree = "<group>"; };
+		F6D77FD31E4D8E3B32C1C188B97DBC8B /* LocationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = Source/LocationManager.swift; sourceTree = "<group>"; };
+		F8A130DB53C07AC1BBC30D4BB9DD868B /* Pods_ARKit_GestureRecognizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ARKit_GestureRecognizer.framework; path = "Pods-ARKit-GestureRecognizer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD9CCFACB9F26412080ED44DE41840D0 /* ImagePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ImagePicker.modulemap; sourceTree = "<group>"; };
+		FFC2F1D9CC5D951F1C5A403EE743EBF1 /* Pods-ARKit-GestureRecognizer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ARKit-GestureRecognizer-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		110E2611FD5754C36D751DFF05044166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7750B41B6FEAF447DD89237E2920FE30 /* AVFoundation.framework in Frameworks */,
+				8ADC7BE06862E7A8D631BD7A987CC983 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32C7C56B46B07FA4041A1D19A2958CDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8E652230907093FCFFE33467327F56 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F30E4275DF37ADD0BF5C8056076BF5C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1888839C4F8B8445AFDECC05114858E7 /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				E0627834CB360D3115C9517312C7048C /* AssetManager.swift */,
+				6DCC2455D2BA0CFE82B1A2CD764AF07C /* BottomContainerView.swift */,
+				B7EC021DF64ABCEC5C9D35A370A107F6 /* ButtonPicker.swift */,
+				9A8A81E129FFE316F1C8A29220313F64 /* CameraMan.swift */,
+				5598C9698DCFA37FC3175CAD93B4DB0D /* CameraView.swift */,
+				CFD576E8FB8BC8494A329D769A2ED69A /* Configuration.swift */,
+				CAE024880F43FE8D5CDC8D0746295F74 /* ConstraintsSetup.swift */,
+				8AF4B2903EECFBCDAE53859470C161BF /* Helper.swift */,
+				B4782C4A1C2228BE332DE3A560D735D4 /* ImageGalleryLayout.swift */,
+				A9970E49D10D3ED332B8AF2EBE1DBB49 /* ImageGalleryView.swift */,
+				6C9E1AA57C279D49069D9DBD188B0A97 /* ImageGalleryViewCell.swift */,
+				E843A237FC8074E3CA94A69E7A0B950D /* ImageGalleryViewDataSource.swift */,
+				4337DDACE077EABC2F471DB42F1BE12E /* ImagePickerController.swift */,
+				1A60BE1E1221D8665D2C2F1152602D50 /* ImageStack.swift */,
+				F6D77FD31E4D8E3B32C1C188B97DBC8B /* LocationManager.swift */,
+				6B33709534350C49F266E9B11FF07DF8 /* StackView.swift */,
+				A805861C4092810E90249162D531A6BF /* TopView.swift */,
+				36665439190760C5A1EF54620FC2B6EB /* VideoInfoView.swift */,
+				FC0F8A38B500633A78CD4D97FD49CF9F /* Resources */,
+				5FA79B3FD83254C0B66A4D7BDA7E8533 /* Support Files */,
+			);
+			name = ImagePicker;
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		2367F8FB4FCF257D288A0DD915452D44 /* Pods-ARKit-GestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				0C5B46567DC60FFDFA6DBBDEFECEECFB /* Info.plist */,
+				C9E04CC5800B264B3D74CC3FDC844897 /* Pods-ARKit-GestureRecognizer.modulemap */,
+				AE1BB7C8F5EA2F5709CE7A7A27104A1D /* Pods-ARKit-GestureRecognizer-acknowledgements.markdown */,
+				FFC2F1D9CC5D951F1C5A403EE743EBF1 /* Pods-ARKit-GestureRecognizer-acknowledgements.plist */,
+				D66A404EEEC934FFDF2DBDB950DFEF0B /* Pods-ARKit-GestureRecognizer-dummy.m */,
+				92737302FF6B3C78C8949246DD2B26A9 /* Pods-ARKit-GestureRecognizer-frameworks.sh */,
+				6ED966095B67EF988F564A62E68A8485 /* Pods-ARKit-GestureRecognizer-resources.sh */,
+				DB12A3EE6F94CB69153131F5391149CE /* Pods-ARKit-GestureRecognizer-umbrella.h */,
+				741A81769A2D68E22BF02815E92FC2AB /* Pods-ARKit-GestureRecognizer.debug.xcconfig */,
+				79344EEF0FAFCED1FF9EF4E7A10E091F /* Pods-ARKit-GestureRecognizer.release.xcconfig */,
+			);
+			name = "Pods-ARKit-GestureRecognizer";
+			path = "Target Support Files/Pods-ARKit-GestureRecognizer";
+			sourceTree = "<group>";
+		};
+		34690F75DA43A27BBF467420D25C0480 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1888839C4F8B8445AFDECC05114858E7 /* ImagePicker */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		40920A59FB145AA7CBA2ACE853F686BE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2367F8FB4FCF257D288A0DD915452D44 /* Pods-ARKit-GestureRecognizer */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB9C43F4BAD2992BD9EE60E0C1AC390B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5FA79B3FD83254C0B66A4D7BDA7E8533 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD9CCFACB9F26412080ED44DE41840D0 /* ImagePicker.modulemap */,
+				84553F1F83671CC55723DF33A12E453C /* ImagePicker.xcconfig */,
+				404EE37429A8B338036824EFA354C8DB /* ImagePicker-dummy.m */,
+				6BD85237EB80A2340931C51D806BADF0 /* ImagePicker-prefix.pch */,
+				3627A8804E2B095F1D49AF421B8F8F2D /* ImagePicker-umbrella.h */,
+				D94E0411E7B1306B4E09537E5FADAE5F /* Info.plist */,
+				1E6C25CCEC37354FC73BEE81E603D5A6 /* ResourceBundle-ImagePicker-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ImagePicker";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				34690F75DA43A27BBF467420D25C0480 /* Pods */,
+				C315594883CB032C18579B2993503376 /* Products */,
+				40920A59FB145AA7CBA2ACE853F686BE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AB9C43F4BAD2992BD9EE60E0C1AC390B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				840966EAD0718963750ABB9F4A6EB218 /* AVFoundation.framework */,
+				2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C315594883CB032C18579B2993503376 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A56D51DD1D199199301E35F53A81D16 /* ImagePicker.bundle */,
+				9DE8C926EB6221898E9CFF7C25A89AF3 /* ImagePicker.framework */,
+				F8A130DB53C07AC1BBC30D4BB9DD868B /* Pods_ARKit_GestureRecognizer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC0F8A38B500633A78CD4D97FD49CF9F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				45DB53CC5242B5E4DF2B562B0040E0FC /* AUTO@3x.png */,
+				9E58DA37A519E8ED71661ABEFBE889DB /* cameraIcon@3x.png */,
+				2E25A8478F94A28643CE0F43BF9EA7E6 /* focusIcon@3x.png */,
+				B80BAB2FE6890E02BE7C496404E9F8B0 /* OFF@3x.png */,
+				9FD8017D12BF271CB3D0328C4B9630F9 /* ON@3x.png */,
+				347842AB0045A8FE8701CDA4805D6399 /* selectedImageGallery@3x.png */,
+				6AD76E9C05780071E1F7180E39DB59BF /* video@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5A1E8CE87B81DE78D9C6CAF55847A457 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA3717739BBA5C6DCE0EB2A455E8FDB /* ImagePicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B68C61E166DFCBF211EDA5F76FFBF37 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EF0F3FF30F90492F6A56D1AE3086AB8 /* Pods-ARKit-GestureRecognizer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		88D0D45A202C76CDCB9546091A25AB0B /* ImagePicker-ImagePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9076DD2450A84AE2809F5B9440BCC685 /* Build configuration list for PBXNativeTarget "ImagePicker-ImagePicker" */;
+			buildPhases = (
+				640A00D7C575E7720DCE73226BE54F74 /* Sources */,
+				F30E4275DF37ADD0BF5C8056076BF5C4 /* Frameworks */,
+				4BB17431F68C66F9CF0DA74F0FF75EFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ImagePicker-ImagePicker";
+			productName = "ImagePicker-ImagePicker";
+			productReference = 7A56D51DD1D199199301E35F53A81D16 /* ImagePicker.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		8A17CB894371F02E0326064851AF7C43 /* ImagePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0444BD49D1F0AA3BCF11ABEC7DEA8E3B /* Build configuration list for PBXNativeTarget "ImagePicker" */;
+			buildPhases = (
+				45DCA4BFBC7C378B2A5BF2664BAACF60 /* Sources */,
+				110E2611FD5754C36D751DFF05044166 /* Frameworks */,
+				0116DD4D1AE10F8D33BC79467BBE4FC8 /* Resources */,
+				5A1E8CE87B81DE78D9C6CAF55847A457 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2469AE7C6965589B61817E6BA00BC69F /* PBXTargetDependency */,
+			);
+			name = ImagePicker;
+			productName = ImagePicker;
+			productReference = 9DE8C926EB6221898E9CFF7C25A89AF3 /* ImagePicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F8C8F4571202611D568A1C4080E16009 /* Pods-ARKit-GestureRecognizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85323F4B49D6719A90D1E48AFE6225A3 /* Build configuration list for PBXNativeTarget "Pods-ARKit-GestureRecognizer" */;
+			buildPhases = (
+				2FC880B84E0C3AE19E5E1F61EC115D4F /* Sources */,
+				32C7C56B46B07FA4041A1D19A2958CDB /* Frameworks */,
+				8B68C61E166DFCBF211EDA5F76FFBF37 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B3676249CE4617C4EF40B2C09F819D2 /* PBXTargetDependency */,
+			);
+			name = "Pods-ARKit-GestureRecognizer";
+			productName = "Pods-ARKit-GestureRecognizer";
+			productReference = F8A130DB53C07AC1BBC30D4BB9DD868B /* Pods_ARKit_GestureRecognizer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = C315594883CB032C18579B2993503376 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A17CB894371F02E0326064851AF7C43 /* ImagePicker */,
+				88D0D45A202C76CDCB9546091A25AB0B /* ImagePicker-ImagePicker */,
+				F8C8F4571202611D568A1C4080E16009 /* Pods-ARKit-GestureRecognizer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0116DD4D1AE10F8D33BC79467BBE4FC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				695E1089B581582F41B2389C2E4D19A0 /* ImagePicker.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BB17431F68C66F9CF0DA74F0FF75EFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE3B839B228D2FB151791C791242D04 /* AUTO@3x.png in Resources */,
+				C3290D6F80FE6EE0D5D6D419C93D0E80 /* cameraIcon@3x.png in Resources */,
+				D7CC87164C2B724F1EAABCF6A9A068F4 /* focusIcon@3x.png in Resources */,
+				39528BEA185C60BFFE2E5909006E723D /* OFF@3x.png in Resources */,
+				A50F09D10E907DEE57D57C6AD160F8F7 /* ON@3x.png in Resources */,
+				F88AC4C283F4CE67030F4321693BBAAA /* selectedImageGallery@3x.png in Resources */,
+				DDFA8B7BE2EA5E19E7B475915355D477 /* video@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FC880B84E0C3AE19E5E1F61EC115D4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D7329116B161A636913293834E7B412 /* Pods-ARKit-GestureRecognizer-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45DCA4BFBC7C378B2A5BF2664BAACF60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9F53B83877BABC897067AC39EC03A63 /* AssetManager.swift in Sources */,
+				7BB0D44E3938626F29853182C9205AE7 /* BottomContainerView.swift in Sources */,
+				EABB4532135FDC89BFC940ED172E901E /* ButtonPicker.swift in Sources */,
+				A3D56D26C9EAE0FCA76083C1E7DC6847 /* CameraMan.swift in Sources */,
+				5F3E35F2B166055EEC4E7A50E80958FD /* CameraView.swift in Sources */,
+				B7EA24AFF7D230810AB18E2C89544208 /* Configuration.swift in Sources */,
+				A44FEA8F8C9099C426A5DF8BC50C912B /* ConstraintsSetup.swift in Sources */,
+				0CB932091B520E7F65A74FBFA3FF11A2 /* Helper.swift in Sources */,
+				8A97BCA1E8E4140A84AF581D9BFA4711 /* ImageGalleryLayout.swift in Sources */,
+				F6142E7525478016188C33344951C540 /* ImageGalleryView.swift in Sources */,
+				27E5AAC40E8C4D8DFF70DF4E7021D68E /* ImageGalleryViewCell.swift in Sources */,
+				9D8234BB3230E63318FB87CAA29AD59C /* ImageGalleryViewDataSource.swift in Sources */,
+				4B043088449CCBB537A54D669ED216C5 /* ImagePicker-dummy.m in Sources */,
+				935C2F84774171D23DFC43DA57F172F8 /* ImagePickerController.swift in Sources */,
+				680ECF5AE2B82F3A13B49AC0C5D78D74 /* ImageStack.swift in Sources */,
+				F7DB16A5D3874C16C5E6C70CEBFADC95 /* LocationManager.swift in Sources */,
+				DEC05FECB37B24E58F284AC9B97F7E64 /* StackView.swift in Sources */,
+				B0DED102D2452EC7DEB173264004161A /* TopView.swift in Sources */,
+				DD8C6F683BF022AF2CAA712CB95F5836 /* VideoInfoView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		640A00D7C575E7720DCE73226BE54F74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2469AE7C6965589B61817E6BA00BC69F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ImagePicker-ImagePicker";
+			target = 88D0D45A202C76CDCB9546091A25AB0B /* ImagePicker-ImagePicker */;
+			targetProxy = 6B8986630584C6CBE06F80050CD944A8 /* PBXContainerItemProxy */;
+		};
+		8B3676249CE4617C4EF40B2C09F819D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ImagePicker;
+			target = 8A17CB894371F02E0326064851AF7C43 /* ImagePicker */;
+			targetProxy = 6B30F342304F473441EFBB8CF0891F01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3923FF9FD99259265285BC1F237F45A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84553F1F83671CC55723DF33A12E453C /* ImagePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ImagePicker";
+				INFOPLIST_FILE = "Target Support Files/ImagePicker/ResourceBundle-ImagePicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = ImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		39C5BC78A31CDE101068C530CAC7FA0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		79160ECAF4D826C0C00A8E4C23F56204 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84553F1F83671CC55723DF33A12E453C /* ImagePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ImagePicker/ImagePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ImagePicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ImagePicker/ImagePicker.modulemap";
+				PRODUCT_NAME = ImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7C2525AC42236F57444A20B8C86AD3D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84553F1F83671CC55723DF33A12E453C /* ImagePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ImagePicker/ImagePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ImagePicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ImagePicker/ImagePicker.modulemap";
+				PRODUCT_NAME = ImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		81F5F149E5F20BF80B0F92C60C8D980F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79344EEF0FAFCED1FF9EF4E7A10E091F /* Pods-ARKit-GestureRecognizer.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ARKit-GestureRecognizer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ARKit-GestureRecognizer/Pods-ARKit-GestureRecognizer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ARKit_GestureRecognizer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B2C2D4BE67FDFB7E3577FDB89002D558 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 741A81769A2D68E22BF02815E92FC2AB /* Pods-ARKit-GestureRecognizer.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ARKit-GestureRecognizer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ARKit-GestureRecognizer/Pods-ARKit-GestureRecognizer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ARKit_GestureRecognizer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F1944AB02FC48BF77E241FAFF6A41BCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84553F1F83671CC55723DF33A12E453C /* ImagePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ImagePicker";
+				INFOPLIST_FILE = "Target Support Files/ImagePicker/ResourceBundle-ImagePicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = ImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0444BD49D1F0AA3BCF11ABEC7DEA8E3B /* Build configuration list for PBXNativeTarget "ImagePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C2525AC42236F57444A20B8C86AD3D7 /* Debug */,
+				79160ECAF4D826C0C00A8E4C23F56204 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C5BC78A31CDE101068C530CAC7FA0F /* Debug */,
+				89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85323F4B49D6719A90D1E48AFE6225A3 /* Build configuration list for PBXNativeTarget "Pods-ARKit-GestureRecognizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2C2D4BE67FDFB7E3577FDB89002D558 /* Debug */,
+				81F5F149E5F20BF80B0F92C60C8D980F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9076DD2450A84AE2809F5B9440BCC685 /* Build configuration list for PBXNativeTarget "ImagePicker-ImagePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1944AB02FC48BF77E241FAFF6A41BCE /* Debug */,
+				3923FF9FD99259265285BC1F237F45A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

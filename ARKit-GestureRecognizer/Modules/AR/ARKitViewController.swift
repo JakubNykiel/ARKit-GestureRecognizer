@@ -9,12 +9,14 @@
 import UIKit
 import SceneKit
 import ARKit
+import AVFoundation
 
 class ARKitViewController: UIViewController {
 
     @IBOutlet var sceneView: ARSCNView!
     @IBOutlet weak var backBtn: UIButton!
     var configuration: ARWorldTrackingConfiguration!
+    var timer : Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,11 +36,16 @@ class ARKitViewController: UIViewController {
 
     private func prepare() {
         sceneView.delegate = self
-//        sceneView.showsStatistics = true
+        sceneView.showsStatistics = true
         self.navigationController?.isNavigationBarHidden = true
         self.backBtn.layer.cornerRadius = 0.5 * backBtn.bounds.size.width
         
     }
+    
+    @objc func vibratePhone() {
+        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
+    }
+    
     @IBAction func removeAllFromScene(_ sender: Any) {
         self.sceneView.session.pause()
         self.sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
@@ -46,11 +53,20 @@ class ARKitViewController: UIViewController {
         }
         self.sceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
     }
+    
+    @IBAction func stopSound(_ sender: Any) {
+        timer?.invalidate()
+    }
+    
+    @IBAction func playSound(_ sender: Any) {
+        timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(vibratePhone), userInfo: nil, repeats: true)
+    }
+    
     @IBAction func addToScene(_ sender: Any) {
        self.addNode()
     }
     @IBAction func addManyToScene(_ sender: Any) {
-        for item in 0...1 {
+        for _ in 0...1 {
             self.addNode()
         }
     }

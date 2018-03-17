@@ -14,6 +14,7 @@ class ARKitViewController: UIViewController {
 
     @IBOutlet var sceneView: ARSCNView!
     @IBOutlet weak var backBtn: UIButton!
+    var configuration: ARWorldTrackingConfiguration!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +23,7 @@ class ARKitViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        let configuration = ARWorldTrackingConfiguration()
+        self.configuration = ARWorldTrackingConfiguration()
         sceneView.session.run(configuration)
     }
     
@@ -39,12 +40,19 @@ class ARKitViewController: UIViewController {
         
     }
     @IBAction func removeAllFromScene(_ sender: Any) {
-        
+        self.sceneView.session.pause()
+        self.sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
+            node.removeFromParentNode()
+        }
+        self.sceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
     }
     @IBAction func addToScene(_ sender: Any) {
-        
+       self.addNode()
     }
     @IBAction func addManyToScene(_ sender: Any) {
+        for item in 0...1 {
+            self.addNode()
+        }
     }
     
     @IBAction func backAction(_ sender: Any) {
@@ -68,5 +76,20 @@ extension ARKitViewController: ARSCNViewDelegate {
     }
 }
 extension ARKitViewController {
-
+    func randomNumbers(firstNum: CGFloat, secondNum: CGFloat) -> CGFloat {
+        return CGFloat(arc4random()) / CGFloat(UINT32_MAX) * abs(firstNum - secondNum) + min(firstNum, secondNum)
+    }
+    
+    func addNode() {
+        let node = SCNNode()
+        node.geometry = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0.03)
+        node.geometry?.firstMaterial?.specular.contents = UIColor.orange
+        node.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
+        let x = randomNumbers(firstNum: -0.2, secondNum: 0.2)
+        let y = randomNumbers(firstNum: -0.2, secondNum: 0.2)
+        let z = randomNumbers(firstNum: -1.5, secondNum: -0.8)
+        
+        node.position = SCNVector3(x,y,z)
+        self.sceneView.scene.rootNode.addChildNode(node)
+    }
 }

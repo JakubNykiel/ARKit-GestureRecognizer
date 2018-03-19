@@ -27,6 +27,8 @@ class ARKitViewController: UIViewController {
         super.viewWillAppear(animated)
         self.configuration = ARWorldTrackingConfiguration()
         sceneView.session.run(configuration)
+        self.sceneView.autoenablesDefaultLighting = true
+        self.sceneView.allowsCameraControl = true
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -35,6 +37,7 @@ class ARKitViewController: UIViewController {
     }
 
     private func prepare() {
+        
         sceneView.delegate = self
         sceneView.showsStatistics = true
         self.navigationController?.isNavigationBarHidden = true
@@ -63,12 +66,12 @@ class ARKitViewController: UIViewController {
     }
     
     @IBAction func addToScene(_ sender: Any) {
-       self.addNode()
+        self.addNode(color: UIColor.blue)
     }
     @IBAction func addManyToScene(_ sender: Any) {
-        for _ in 0...1 {
-            self.addNode()
-        }
+        self.addNode(color: UIColor.orange)
+        self.addNode(color: UIColor.red)
+
     }
     
     @IBAction func backAction(_ sender: Any) {
@@ -96,14 +99,14 @@ extension ARKitViewController {
         return CGFloat(arc4random()) / CGFloat(UINT32_MAX) * abs(firstNum - secondNum) + min(firstNum, secondNum)
     }
     
-    func addNode() {
+    func addNode(color: UIColor) {
         let node = SCNNode()
         node.geometry = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0.03)
-        node.geometry?.firstMaterial?.specular.contents = UIColor.orange
-        node.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
+        node.geometry?.firstMaterial?.specular.contents = UIColor.yellow
+        node.geometry?.firstMaterial?.diffuse.contents = color
         let x = randomNumbers(firstNum: -0.2, secondNum: 0.2)
         let y = randomNumbers(firstNum: -0.2, secondNum: 0.2)
-        let z = randomNumbers(firstNum: -1.5, secondNum: -0.8)
+        let z = randomNumbers(firstNum: -1.2, secondNum: -0.6)
         
         node.position = SCNVector3(x,y,z)
         self.sceneView.scene.rootNode.addChildNode(node)

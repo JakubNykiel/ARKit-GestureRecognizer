@@ -20,31 +20,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAW-x8-GBe">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAW-x8-GBe">
                                 <rect key="frame" x="0.0" y="64" width="375" height="301.5"/>
-                                <state key="normal" title="ARKit"/>
+                                <state key="normal" image="ARKit"/>
                                 <connections>
                                     <segue destination="BV1-FR-VrT" kind="show" id="HEm-aE-SFb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNP-Ga-FFU">
-                                <rect key="frame" x="0.0" y="365.5" width="375" height="301.5"/>
-                                <state key="normal" title="Biblioteka zdjęć"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNP-Ga-FFU">
+                                <rect key="frame" x="0.0" y="366.5" width="375" height="300.5"/>
+                                <state key="normal" image="photoIcon"/>
                                 <connections>
                                     <action selector="showLibrary:" destination="LVn-bU-ATq" eventType="touchUpInside" id="x9Y-FN-pUu"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="unW-jS-Vu5">
+                                <rect key="frame" x="0.0" y="365.5" width="375" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="a3z-9t-h2n"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="unW-jS-Vu5" firstAttribute="leading" secondItem="z82-ZF-h6k" secondAttribute="leading" id="0hc-cA-Vyb"/>
                             <constraint firstItem="vNP-Ga-FFU" firstAttribute="leading" secondItem="z82-ZF-h6k" secondAttribute="leading" id="Aw7-gO-f3F"/>
                             <constraint firstItem="z82-ZF-h6k" firstAttribute="trailing" secondItem="vNP-Ga-FFU" secondAttribute="trailing" id="EOY-th-F9z"/>
                             <constraint firstItem="z82-ZF-h6k" firstAttribute="bottom" secondItem="vNP-Ga-FFU" secondAttribute="bottom" id="UwX-cC-1A8"/>
+                            <constraint firstItem="unW-jS-Vu5" firstAttribute="top" secondItem="wAW-x8-GBe" secondAttribute="bottom" id="Zex-cU-fye"/>
                             <constraint firstItem="wAW-x8-GBe" firstAttribute="leading" secondItem="z82-ZF-h6k" secondAttribute="leading" id="fEp-KK-7YX"/>
                             <constraint firstItem="z82-ZF-h6k" firstAttribute="trailing" secondItem="wAW-x8-GBe" secondAttribute="trailing" id="gSD-rK-Qns"/>
                             <constraint firstItem="wAW-x8-GBe" firstAttribute="height" secondItem="z82-ZF-h6k" secondAttribute="height" multiplier="0.5" id="hsO-on-5fV"/>
                             <constraint firstItem="wAW-x8-GBe" firstAttribute="top" secondItem="z82-ZF-h6k" secondAttribute="top" id="iPq-Vv-1Ms"/>
-                            <constraint firstItem="vNP-Ga-FFU" firstAttribute="top" secondItem="wAW-x8-GBe" secondAttribute="bottom" id="qa7-3d-aLT"/>
+                            <constraint firstItem="z82-ZF-h6k" firstAttribute="trailing" secondItem="unW-jS-Vu5" secondAttribute="trailing" id="l4S-1r-Ezr"/>
+                            <constraint firstItem="vNP-Ga-FFU" firstAttribute="top" secondItem="unW-jS-Vu5" secondAttribute="bottom" id="qa7-3d-aLT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="z82-ZF-h6k"/>
                     </view>
@@ -146,6 +156,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJX-Pj-6qw">
                                 <rect key="frame" x="303" y="514" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99019607840000001" green="1" blue="1" alpha="0.70414169520000003" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Obiekt"/>
                                 <connections>
                                     <action selector="addToScene:" destination="BV1-FR-VrT" eventType="touchUpInside" id="DrP-RA-hn3"/>
@@ -154,6 +165,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYf-KC-4fa">
                                 <rect key="frame" x="307" y="431" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99019607840000001" green="1" blue="1" alpha="0.70414169520000003" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Wiele"/>
                                 <connections>
                                     <action selector="addManyToScene:" destination="BV1-FR-VrT" eventType="touchUpInside" id="d62-1b-YDs"/>
@@ -162,6 +174,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GwJ-4G-Gas">
                                 <rect key="frame" x="308" y="351" width="36" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99019607840000001" green="1" blue="1" alpha="0.70414169520000003" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Usun"/>
                                 <connections>
                                     <action selector="removeAllFromScene:" destination="BV1-FR-VrT" eventType="touchUpInside" id="sYs-5t-hBh"/>
@@ -170,6 +183,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNh-Gy-P1I">
                                 <rect key="frame" x="301" y="286" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99019607840000001" green="1" blue="1" alpha="0.70414169520000003" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Dzwiek"/>
                                 <connections>
                                     <action selector="playSound:" destination="BV1-FR-VrT" eventType="touchUpInside" id="kub-0c-mtj"/>
@@ -178,6 +192,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIg-tK-3As">
                                 <rect key="frame" x="311" y="217" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99019607840000001" green="1" blue="1" alpha="0.70414169520000003" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="stop"/>
                                 <connections>
                                     <action selector="stopSound:" destination="BV1-FR-VrT" eventType="touchUpInside" id="asa-DG-Fm6"/>
@@ -224,4 +239,8 @@
             <point key="canvasLocation" x="-1258" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ARKit" width="250" height="250"/>
+        <image name="photoIcon" width="200" height="200"/>
+    </resources>
 </document>

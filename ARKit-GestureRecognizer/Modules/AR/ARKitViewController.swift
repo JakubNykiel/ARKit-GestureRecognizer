@@ -10,17 +10,30 @@ import UIKit
 import SceneKit
 import ARKit
 import AVFoundation
+import CoreML
+import Vision
 
 class ARKitViewController: UIViewController {
 
     @IBOutlet var sceneView: ARSCNView!
     @IBOutlet weak var backBtn: UIButton!
+    @IBOutlet weak var searchBtn: UIButton!
+    
     var configuration: ARWorldTrackingConfiguration!
     var timer : Timer?
+    
+    var detectCounter: Int = 0
+    var detections: [String:Int] = [:]
+    var detectingIsActive: Bool = true
+    
+    let dispatchQueueML = DispatchQueue(label: "com.hw.dispatchqueueml") // A Serial Queue
+    var visionRequests = [VNRequest]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.prepare()
+        self.prepareCoreML()
+        self.searchBtn.isHidden = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,38 +58,111 @@ class ARKitViewController: UIViewController {
         
     }
     
+    private func prepareCoreML() {
+        guard let selectedModel = try? VNCoreMLModel(for: gesty2().model) else {
+            fatalError("Could not load model. Ensure model has been drag and dropped (copied) to XCode Project. Also ensure the model is part of a target (see: https://stackoverflow.com/questions/45884085/model-is-not-part-of-any-target-add-the-model-to-a-target-to-enable-generation ")
+        }
+        let classificationRequest = VNCoreMLRequest(model: selectedModel, completionHandler: classificationCompleteHandler)
+        classificationRequest.imageCropAndScaleOption = VNImageCropAndScaleOption.centerCrop
+        visionRequests = [classificationRequest]
+        loopCoreMLUpdate()
+    }
+    
+    func loopCoreMLUpdate() {
+        dispatchQueueML.async {
+            print(self.detectingIsActive)
+            if self.detectingIsActive {
+                self.updateCoreML()
+                self.loopCoreMLUpdate()
+            }
+            
+        }
+    }
+    
+    func updateCoreML() {
+        let pixbuff : CVPixelBuffer? = (sceneView.session.currentFrame?.capturedImage)
+        if pixbuff == nil { return }
+        let ciImage = CIImage(cvPixelBuffer: pixbuff!)
+        
+        let imageRequestHandler = VNImageRequestHandler(ciImage: ciImage, options: [:])
+        
+        do {
+            try imageRequestHandler.perform(self.visionRequests)
+        } catch {
+            print(error)
+        }
+    }
+    
     @objc func vibratePhone() {
         AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
     }
-    
-    @IBAction func removeAllFromScene(_ sender: Any) {
-        self.sceneView.session.pause()
-        self.sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
-            node.removeFromParentNode()
-        }
-        self.sceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
-    }
-    
-    @IBAction func stopSound(_ sender: Any) {
-        timer?.invalidate()
-    }
-    
-    @IBAction func playSound(_ sender: Any) {
-        timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(vibratePhone), userInfo: nil, repeats: true)
-    }
-    
-    @IBAction func addToScene(_ sender: Any) {
-        self.addNode(color: UIColor.blue)
-    }
-    @IBAction func addManyToScene(_ sender: Any) {
-        self.addNode(color: UIColor.orange)
-        self.addNode(color: UIColor.red)
 
+    @IBAction func searchAction(_ sender: Any) {
+        self.detectingIsActive = true
+        loopCoreMLUpdate()
+        self.searchBtn.isHidden = true
     }
     
     @IBAction func backAction(_ sender: Any) {
         self.navigationController?.popToRootViewController(animated: true)
     }
+    
+    
+    func classificationCompleteHandler(request: VNRequest, error: Error?) {
+        // Catch Errors
+        if error != nil {
+            print("Error: " + (error?.localizedDescription)!)
+            return
+        }
+        guard let observations = request.results else {
+            print("No results")
+            return
+        }
+        
+        let observation = observations.first as? VNClassificationObservation
+        
+        let observationIdentifier: String = observation!.identifier
+        let observationValue: String = String(format:" : %.2f", observation!.confidence)
+        
+        DispatchQueue.main.async {
+//            print("\(observationIdentifier) - \(observationValue)")
+            if observation!.confidence > 0.4 {
+                if self.detections[observationIdentifier] == nil {
+                    self.detections[observationIdentifier] = 0
+                }
+                self.detections[observationIdentifier] = self.detections[observationIdentifier]! + 1
+                print("\(String(describing: self.detections[observationIdentifier]!)): \(observationIdentifier) - \(observationValue)")
+                print("-------------")
+                if self.detections[observationIdentifier] == 18 {
+                    self.detectingIsActive = false
+                    switch observationIdentifier {
+                    case "muka":
+                        self.addNode(color: UIColor.blue)
+                        self.detections = [:]
+                        self.searchBtn.isHidden = false
+                    case "loser":
+                        self.addNode(color: UIColor.orange)
+                        self.addNode(color: UIColor.red)
+                        self.detections = [:]
+                        self.searchBtn.isHidden = false
+                    case "pi?teczka":
+                        self.sceneView.session.pause()
+                        self.sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
+                            node.removeFromParentNode()
+                        }
+                        self.sceneView.session.run(self.configuration)
+                        self.detections = [:]
+                        self.searchBtn.isHidden = false
+                    default:
+                        self.detectingIsActive = true
+                        print("Nieznany gest")
+                    }
+                }
+            }
+            
+        }
+    }
+    
 }
 extension ARKitViewController: ARSCNViewDelegate {
     func session(_ session: ARSession, didFailWithError error: Error) {

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		089CC2159DA2C988FB7BEB12 /* Pods_ARKit_GestureRecognizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53053B1A6CBB1452080202A7 /* Pods_ARKit_GestureRecognizer.framework */; };
+		C31C9FDB20D7153D00A41557 /* gesty8.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C31C9FDA20D7153D00A41557 /* gesty8.mlmodel */; };
+		C31C9FDD20D720DF00A41557 /* gesty9.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C31C9FDC20D720DF00A41557 /* gesty9.mlmodel */; };
 		C3537F34205D0A66002E1F15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3537F33205D0A66002E1F15 /* AppDelegate.swift */; };
 		C3537F36205D0A66002E1F15 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = C3537F35205D0A66002E1F15 /* art.scnassets */; };
 		C3537F3B205D0A66002E1F15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3537F39205D0A66002E1F15 /* Main.storyboard */; };
@@ -17,11 +19,17 @@
 		C3537F4E205D170A002E1F15 /* ARKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3537F4D205D170A002E1F15 /* ARKitViewController.swift */; };
 		C3537F50205D1E1A002E1F15 /* PhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3537F4F205D1E1A002E1F15 /* PhotoLibrary.swift */; };
 		C3537F55205D20C0002E1F15 /* UserImagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3537F54205D20C0002E1F15 /* UserImagesCollectionViewCell.swift */; };
+		C3ACE3DD20D30F4A000D0F70 /* gesty2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C3ACE3DC20D30F49000D0F70 /* gesty2.mlmodel */; };
+		C3ACE3DF20D31135000D0F70 /* gesty5.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C3ACE3DE20D31135000D0F70 /* gesty5.mlmodel */; };
+		C3ACE3E120D315C7000D0F70 /* gesty6.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C3ACE3E020D315C7000D0F70 /* gesty6.mlmodel */; };
+		C3EBAADB20A6DA5A0013D97F /* gesty.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C3EBAADA20A6DA5A0013D97F /* gesty.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		53053B1A6CBB1452080202A7 /* Pods_ARKit_GestureRecognizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARKit_GestureRecognizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C98EAC49D34CFA4151773C6 /* Pods-ARKit-GestureRecognizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARKit-GestureRecognizer.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARKit-GestureRecognizer/Pods-ARKit-GestureRecognizer.release.xcconfig"; sourceTree = "<group>"; };
+		C31C9FDA20D7153D00A41557 /* gesty8.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = gesty8.mlmodel; sourceTree = "<group>"; };
+		C31C9FDC20D720DF00A41557 /* gesty9.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = gesty9.mlmodel; sourceTree = "<group>"; };
 		C3537F30205D0A66002E1F15 /* ARKit-GestureRecognizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARKit-GestureRecognizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3537F33205D0A66002E1F15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3537F35205D0A66002E1F15 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -33,6 +41,10 @@
 		C3537F4D205D170A002E1F15 /* ARKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitViewController.swift; sourceTree = "<group>"; };
 		C3537F4F205D1E1A002E1F15 /* PhotoLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibrary.swift; sourceTree = "<group>"; };
 		C3537F54205D20C0002E1F15 /* UserImagesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImagesCollectionViewCell.swift; sourceTree = "<group>"; };
+		C3ACE3DC20D30F49000D0F70 /* gesty2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = gesty2.mlmodel; sourceTree = "<group>"; };
+		C3ACE3DE20D31135000D0F70 /* gesty5.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = gesty5.mlmodel; sourceTree = "<group>"; };
+		C3ACE3E020D315C7000D0F70 /* gesty6.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = gesty6.mlmodel; sourceTree = "<group>"; };
+		C3EBAADA20A6DA5A0013D97F /* gesty.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = gesty.mlmodel; path = ../../../Downloads/gesty.mlmodel; sourceTree = "<group>"; };
 		D8BF329845CB6B43844E9A1A /* Pods-ARKit-GestureRecognizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARKit-GestureRecognizer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARKit-GestureRecognizer/Pods-ARKit-GestureRecognizer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +89,12 @@
 		C3537F32205D0A66002E1F15 /* ARKit-GestureRecognizer */ = {
 			isa = PBXGroup;
 			children = (
+				C31C9FDC20D720DF00A41557 /* gesty9.mlmodel */,
+				C31C9FDA20D7153D00A41557 /* gesty8.mlmodel */,
+				C3ACE3E020D315C7000D0F70 /* gesty6.mlmodel */,
+				C3ACE3DE20D31135000D0F70 /* gesty5.mlmodel */,
+				C3ACE3DC20D30F49000D0F70 /* gesty2.mlmodel */,
+				C3EBAADA20A6DA5A0013D97F /* gesty.mlmodel */,
 				C3537F49205D0BBE002E1F15 /* Resources */,
 				C3537F47205D0AED002E1F15 /* Modules */,
 				C3537F33205D0A66002E1F15 /* AppDelegate.swift */,
@@ -271,10 +289,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3537F50205D1E1A002E1F15 /* PhotoLibrary.swift in Sources */,
+				C3ACE3E120D315C7000D0F70 /* gesty6.mlmodel in Sources */,
 				C3537F34205D0A66002E1F15 /* AppDelegate.swift in Sources */,
 				C3537F4B205D0F03002E1F15 /* MenuViewController.swift in Sources */,
 				C3537F4E205D170A002E1F15 /* ARKitViewController.swift in Sources */,
+				C3ACE3DD20D30F4A000D0F70 /* gesty2.mlmodel in Sources */,
 				C3537F55205D20C0002E1F15 /* UserImagesCollectionViewCell.swift in Sources */,
+				C3EBAADB20A6DA5A0013D97F /* gesty.mlmodel in Sources */,
+				C31C9FDB20D7153D00A41557 /* gesty8.mlmodel in Sources */,
+				C3ACE3DF20D31135000D0F70 /* gesty5.mlmodel in Sources */,
+				C31C9FDD20D720DF00A41557 /* gesty9.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,12 +436,14 @@
 			baseConfigurationReference = D8BF329845CB6B43844E9A1A /* Pods-ARKit-GestureRecognizer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6454359TU3;
 				INFOPLIST_FILE = "$(SRCROOT)/ARKit-GestureRecognizer/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jnykiel.ARKit-GestureRecognizer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -428,12 +454,14 @@
 			baseConfigurationReference = 9C98EAC49D34CFA4151773C6 /* Pods-ARKit-GestureRecognizer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6454359TU3;
 				INFOPLIST_FILE = "$(SRCROOT)/ARKit-GestureRecognizer/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jnykiel.ARKit-GestureRecognizer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
